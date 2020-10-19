@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2020-10-19T01:30:02.090Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="B4KUkgwydm_4rQ1Acy5v" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-19T01:40:30.084Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="NeIGzb2UjvsSW84jgiPV" version="13.8.0" type="github">
   <diagram id="KcHIR-a9TszI01gKyp3U" name="第 1 页">
     <mxGraphModel dx="2249" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="FFGe1vS2HxG-RwNyg99B-43" value="UseServer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;glass=0;" parent="1" vertex="1">
+          <mxGeometry x="740" y="505" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FFGe1vS2HxG-RwNyg99B-44" value="+getUse&#xa;+creatUse&#xa;+deleteUse" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="FFGe1vS2HxG-RwNyg99B-43" vertex="1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
         <mxCell id="FFGe1vS2HxG-RwNyg99B-1" value="" style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.one_client;" parent="1" vertex="1">
           <mxGeometry x="50" y="310" width="90.8" height="61.6" as="geometry" />
         </mxCell>
@@ -124,16 +130,22 @@
         <mxCell id="FFGe1vS2HxG-RwNyg99B-42" value="访问: www.a.com/order/list&lt;br&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout;shadow=0;glass=0;dashed=1;strokeColor=#BDBDBD;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="20" y="660" width="220" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="FFGe1vS2HxG-RwNyg99B-43" value="UseServer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;glass=0;" parent="1" vertex="1">
-          <mxGeometry x="740" y="505" width="160" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="FFGe1vS2HxG-RwNyg99B-44" value="+getUse&#xa;+creatUse&#xa;+deleteUse" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="FFGe1vS2HxG-RwNyg99B-43" vertex="1">
-          <mxGeometry y="30" width="160" height="90" as="geometry" />
-        </mxCell>
         <mxCell id="FFGe1vS2HxG-RwNyg99B-45" value="userRouter" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;glass=0;" parent="1" vertex="1">
           <mxGeometry x="340" y="505" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="FFGe1vS2HxG-RwNyg99B-46" value="path: &#39;user/&#39;&#xa;path: &#39;user/:id&#39;&#xa;path: &#39;use/list&#39;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="FFGe1vS2HxG-RwNyg99B-45" vertex="1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="68wrzdqahDyAN8BW9epd-10" value="OrderServer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="830" y="570" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="68wrzdqahDyAN8BW9epd-11" value="+getOrderList&#xa;+addOrder&#xa;+deletOrder" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;labelBackgroundColor=#ffffff;" vertex="1" parent="68wrzdqahDyAN8BW9epd-10">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="68wrzdqahDyAN8BW9epd-15" value="xxx服务类" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="660" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="68wrzdqahDyAN8BW9epd-16" value="+getxxx&#xa;+addxxx&#xa;+deletxxx&#xa;+editxxx" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;labelBackgroundColor=#ffffff;" vertex="1" parent="68wrzdqahDyAN8BW9epd-15">
           <mxGeometry y="30" width="160" height="90" as="geometry" />
         </mxCell>
       </root>
